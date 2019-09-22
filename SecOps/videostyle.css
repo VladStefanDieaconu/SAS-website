@@ -1,0 +1,498 @@
+* {
+ margin: 0;
+ padding: 0;   
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    background: none;
+    
+}
+
+
+h1 { color: #fff; font-family: 'Open Sans Condensed', sans-serif; font-size: 80px; font-weight: 700; line-height: 80px;  text-transform: uppercase; }
+h3 { color: #ffffff; font-family: 'Raleway',sans-serif; font-size: 30px;  line-height: 30px; }
+h4 { color: #ffffff; font-family: 'Raleway',sans-serif; font-size: 23px;  line-height: 23px; text-align: left; }
+h5 {font-size: 25px; color:#fff; text-align:center;}
+h6 { color: #ffffff; font-family: 'Raleway',sans-serif; font-size: 23px;  line-height: 23px; text-align: left; }
+p { color: #f8f8f8; font-family: 'Raleway',sans-serif; font-size: 20px; font-weight: 500; line-height: 26px;}
+
+section
+{
+    width: 100%;
+    height: auto;
+    float:left;
+}
+
+
+/* #Home{background-image: url('background.jpg')} */
+
+#Why{background-image: url('deepblue.png')}
+#HowToApply{background-color: #4118be}
+#Courses{background-color: #4118be}
+#CareerPerspectives{background-color: #4118be}
+#Contact{background-color: #4118be}
+
+.video-background{
+    position: absolute;
+    top:0;
+    left:0;
+    min-width: auto;
+    min-height: auto;
+    width: 100%;
+    height: auto;
+    z-index: -100;
+}
+
+@media screen and (max-width: 1657px) {
+    .video-background {
+        width: 100vw;
+    }
+}
+
+/* HOME !!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+#homepageDiv {
+    margin-top: 5%;
+    margin-left: auto;
+	margin-right: auto;
+    max-width: 1000px;
+    
+}
+
+#textHomePage {
+    width: 75%;
+    justify-content: left;
+}
+
+#pozeDownload {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: left;
+}
+
+#pozeDownload > div{
+    margin:30px;
+}
+
+header
+{
+    /* background: rgba(140, 140, 224, 0.5); */
+    height: 100vh;
+}
+
+.HomePage
+{
+    /* background:rgba(0, 0, 0, 0.253); */
+    height: 110px;
+}
+
+.logo
+{   width:200px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#navbar {
+    width: 100%;
+    overflow: hidden;
+    background-color: none;
+    /* position: fixed; */
+  }
+  
+  /* Navbar links */
+  #navbar a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+  
+  /* Page content */
+  .content {
+    padding: 16px;
+  }
+  
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #4118be;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+
+.menu 
+{
+    float: right;
+    list-style: none;
+    margin: 20px;
+    margin-right: 20px;
+    
+}
+
+.menu li
+{
+    display: inline-block;
+    padding: 2px;
+    margin: 5px, 5px;
+    margin-right: 50px;
+    margin-top: 20px;
+    
+    
+}
+
+.menu li a
+{ 
+   text-decoration: none;
+   color:white;
+   padding: 5px;
+   font-family: sans-serif;
+   letter-spacing: 2px;
+   font-size: 13px;
+}
+
+/* COURSES!!!!!!!!!!! */
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    margin-left:10%; 
+    margin-right:10%;
+    margin-top: 50px;
+}
+
+td, th {
+    border: 1px solid #000000;
+    text-align: left;
+    font-style: bold;
+    font-size: 20px;
+    color: white !important;
+    padding: 15px;
+}
+
+td{
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #4722bb;
+}
+
+pre {
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-left: 0%
+}
+
+.AllCoursesTab {
+    height: auto;
+    width: 80%;
+    margin-left:10%; 
+    margin-right:10%;;
+    border-left: 6px solid;
+    border-color: #6f00ff !important;
+}
+
+.AllCoursesTab > div {
+    padding: 1%;
+}
+
+.CourseTitleText{
+    
+}
+
+.CourseDescription {
+    
+}
+
+.CourseProfessorPhotos{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    justify-content: left;
+}
+
+.CourseProfessorPhotos > div {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.butonCourse{
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+
+td:hover{
+    background-color: rgba(98, 6, 126, 0.555);
+}
+
+
+/* CAREER PERSPECTIVES */
+
+.CareerTextTopTitleSection{
+    
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1%;
+    text-align: center;
+    
+}
+
+#mainCareerPerspectives{
+    width: 80%;
+    margin-left:10%; 
+    margin-right:10%;
+    height:500 px;
+    padding:10px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+  }
+
+  #mainCareerPerspectives > div{
+    margin:30px;
+  }
+
+  .d1{
+    justify-content: center;
+    width:400px;
+    height:600px;
+    background-color: #4d21d8;
+  }
+
+.d2{
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    width: 100%;
+    height: auto;
+    background-color: #5147ca;
+  }
+
+
+.CareerDescription{
+    padding-top: 5px;
+    margin-left: 6%;
+    margin-right: 6%;
+    width: 88%;
+    text-align: center;
+  }
+
+  .careerPhoto{
+      padding-top: 20px;
+  }
+
+
+/* HOW TO APPLY */
+.TextTopTitleSection {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1%;
+}
+
+.titleTimeline{
+    font-family:    Arial, Helvetica, sans-serif;
+    font-size:      40px;
+    font-weight:    bold;
+}
+
+
+/* timeline de la HOW TO APPLY */
+#timeline {
+    width: 50%;
+    margin: auto;
+  }
+  
+  .Borders1 {
+    
+    border-top: 2px solid;
+    border-color: rgb(255, 255, 255) !important;
+    margin:0; padding: 30px;
+    color:white;
+    font-size: 20px;
+  }
+  
+  
+  
+  .Borders1:nth-child(even) {
+    border-left: 2px solid;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    margin-right: 30px; 
+    padding-right: 0;
+  }
+  
+  .Borders1:nth-child(odd) {
+    border-right: 2px solid;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin-left: 30px; 
+    padding-right
+    padding-left: 0;
+  }
+  
+  .Borders1:first-child {
+    border-top: 0;
+    border-top-right-radius:0;
+    border-top-left-radius:0;
+  }
+  
+  .Borders1:last-child {
+    border-bottom-right-radius:0;
+    border-bottom-left-radius:0;
+  }
+
+  .FlexClassForRoadMap {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    justify-content: left;
+    margin-top: 1.5%;
+  }
+
+  .FlexClassForRoadMap > div{
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
+  .button{
+    margin-top: 2%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: rgba(98, 6, 126, 0.555);
+}
+
+
+
+  /* CONTACT */
+
+  .ContactTextTopTitleSection {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1%;
+    text-align: center;
+}
+
+  input[type=text], select, textarea {
+    color: black;
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+
+input[type=submit] {
+    background-color: rgba(195, 0, 255, 0.555);
+    color: white;;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: rgba(98, 6, 126, 0.555);
+}
+
+.ContactDiv {
+    color: white;
+    border-radius: 5px;
+    padding: 20px;
+    width: 50%;
+    margin-left:25%; 
+    margin-right:25%;
+    justify-content: center;
+}
+
+.iframeMap {
+    max-width: 100% !important;
+    width: 100% !important;
+    height: auto !important;
+    position:relative;
+}
+
+.footer{
+    margin: 1%;
+    text-align: center;
+}
+
+.socialMedia{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+
+.socialMedia > div{
+    margin:30px;
+  }
+
+  /* WHY-ul */
+
+.WhyPage
+{   
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+
+.WhyPage > div{
+    margin:30px;
+  }
+
+#textWhyPage {
+    order: 1;
+    width: 40%;
+}
+
+#pozaWhyPage {
+    order: 2;
+    width: 40%;
+    object-fit: contain;
+}
+
+
